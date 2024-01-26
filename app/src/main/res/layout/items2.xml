@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cs"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="80dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/item_bg_c2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/finalnumitem_c2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.47000003"
+        app:srcCompat="@drawable/iteam_2" />
+
+    <ImageView
+        android:id="@+id/bgincandcr_c2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/guideline10_c2"
+        app:layout_constraintDimensionRatio="9:28"
+        app:layout_constraintEnd_toStartOf="@+id/guideline31_c2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline18_c2"
+        app:srcCompat="@drawable/backgroundincranddecr" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup_c2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:baselineAligned="false"
+        app:layout_constraintBottom_toBottomOf="@+id/item_bg_c2"
+        app:layout_constraintDimensionRatio="21:29"
+        app:layout_constraintEnd_toStartOf="@+id/guideline11_c2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline31_c2"
+        app:layout_constraintTop_toTopOf="@+id/item_bg_c2"
+        app:layout_constraintVertical_bias="0.45"
+        app:layout_optimizationLevel="dimensions">
+
+        <RadioButton
+            android:id="@+id/itemsBtnRadio1_c2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/raleway_bold"
+            android:text="RadioButton"
+            android:textColor=" #222222"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/priceItemTV1_c2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/raleway_bold"
+            android:gravity="left"
+            android:text="TextView"
+            android:textColor=" #222222"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/itemsBtnRadio2_c2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/raleway_bold"
+            android:text="RadioButton"
+            android:textAlignment="center"
+            android:textColor=" #222222"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/priceItemTV2_c2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:fontFamily="@font/raleway_bold"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor=" #222222"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline17_c2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline30_c2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline31_c2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.17" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline32_c2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.32" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline33_c2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.68" />
+
+    <ImageView
+        android:id="@+id/increment_btn_c2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/guideline17_c2"
+        app:layout_constraintDimensionRatio="3:4"
+        app:layout_constraintEnd_toEndOf="@+id/bgincandcr_c2"
+        app:layout_constraintStart_toStartOf="@+id/bgincandcr_c2"
+        app:layout_constraintTop_toTopOf="@+id/bgincandcr_c2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/increase_icon" />
+
+    <ImageView
+        android:id="@+id/decrement_btn_c2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/bgincandcr_c2"
+        app:layout_constraintDimensionRatio="3:4"
+        app:layout_constraintEnd_toEndOf="@+id/bgincandcr_c2"
+        app:layout_constraintStart_toStartOf="@+id/bgincandcr_c2"
+        app:layout_constraintTop_toTopOf="@+id/guideline17_c2"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/decrease_icon" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10_c2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6924804" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline11_c2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.87" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline18_c2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <TextView
+        android:id="@+id/finalnumitem_c2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="0"
+        android:textColor="#222222"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_bg_c2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

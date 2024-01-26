@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".login">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/iburger_logo" />
+
+    <EditText
+        android:id="@+id/emaillogin_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="15dp"
+        android:layout_weight="0"
+        android:background="#eed669"
+        android:ems="20"
+        android:fontFamily="@font/raleway_bold"
+        android:gravity="center"
+        android:hint="EMAIL ADDRES"
+        android:inputType="textWebEmailAddress"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="#222222"
+        android:textColorHint="#222222"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/passlogin_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:background="#eed669"
+        android:ems="20"
+        android:fontFamily="@font/raleway_bold"
+        android:gravity="center"
+        android:hint="PASSWORD"
+        android:includeFontPadding="false"
+        android:inputType="textPassword"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="#222222"
+        android:textColorHint="#222222"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/forgotpassword_Btn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/raleway_bold"
+        android:text="forgot password?"
+        android:textColor="#222222"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/signuplayout_btn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/raleway_bold"
+        android:text="Dont have Account? signup"
+        android:textAlignment="center"
+        android:textColor="#dF5516" />
+
+    <Button
+        android:id="@+id/loginbtn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="40dp"
+        android:gravity="bottom"
+        android:text="Login"
+        android:textColor="#dF5516"
+        android:textSize="20sp" />
+
+</LinearLayout>

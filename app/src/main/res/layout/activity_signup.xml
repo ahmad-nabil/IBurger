@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_2"
+    android:orientation="vertical"
+    tools:context=".signup">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="127dp"
+        android:layout_height="130dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/iburger_logo"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+    <EditText
+        android:id="@+id/full_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#eed669"
+        android:ems="15"
+        android:fontFamily="@font/raleway_bold"
+        android:gravity="center"
+        android:hint="FULL NAME"
+        android:inputType="text"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="#222222"
+        android:textColorHint="#222222"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/phonetextfiled"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <EditText
+        android:id="@+id/phonetextfiled"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#eed669"
+        android:ems="15"
+        android:fontFamily="@font/raleway_bold"
+        android:gravity="center"
+        android:hint="PHONE NUMBER"
+        android:inputType="phone"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="#222222"
+        android:textColorHint="#222222"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/emailtextfiled"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/full_name" />
+
+    <EditText
+        android:id="@+id/emailtextfiled"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#eed669"
+        android:ems="15"
+        android:fontFamily="@font/raleway_bold"
+        android:gravity="center"
+        android:hint="EMAIL ADDRES"
+        android:inputType="textEmailAddress"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="#222222"
+        android:textColorHint="#222222"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/location_edittext"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/phonetextfiled" />
+
+    <TextView
+        android:id="@+id/location_edittext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#eed669"
+        android:clickable="true"
+        android:editable="false"
+        android:ems="15"
+        android:fontFamily="@font/raleway_bold"
+        android:gravity="center"
+        android:hint="LOCATION"
+        android:inputType="text"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="#222222"
+        android:textColorHint="#222222"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/passwordfiled_edittext"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/emailtextfiled" />
+
+    <EditText
+        android:id="@+id/re_passwordfiled_edittext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#eed669"
+        android:ems="15"
+        android:fontFamily="@font/raleway_bold"
+        android:gravity="center"
+        android:hint="RE-PASSWORD"
+        android:inputType="textPassword"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="#222222"
+        android:textColorHint="#222222"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/save_btn"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/passwordfiled_edittext" />
+
+    <EditText
+        android:id="@+id/passwordfiled_edittext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#eed669"
+        android:ems="15"
+        android:fontFamily="@font/raleway_bold"
+        android:gravity="center"
+        android:hint="PASSWORD"
+        android:inputType="textPassword"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="#222222"
+        android:textColorHint="#222222"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/re_passwordfiled_edittext"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/location_edittext" />
+
+    <Button
+        android:id="@+id/save_btn"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway_bold"
+        android:text="signup"
+        android:textColor="#dF5516"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/re_passwordfiled_edittext" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.29440388" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6545012" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="237dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
